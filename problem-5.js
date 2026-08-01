@@ -6,10 +6,13 @@ function averageResponseTime(times) {
    if (times.length === 0) {
         return "Invalid";
     }
-    if(times.includes(" times[i] ")){
+    for (let i=0;i<=times.length-1;i++){
+if(times.includes(" times[i] ")){
          return "Invalid";
      }
    
+    }
+    
    
  let total = 0;
     for (let i = 0; i <= times.length-1; i++) {
