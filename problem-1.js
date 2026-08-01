@@ -1,6 +1,6 @@
 function matchWinner(teamAGoals, teamBGoals) {
-    if (typeof teamAGoals === "number" && typeof teamBGoals === "number" && !isNaN(teamAGoals, teamBGoals)) {
-        console.log("valid");
+    if (typeof teamAGoals === "number" && typeof teamBGoals === "number"  ) {
+       
         if (teamAGoals > teamBGoals && teamAGoals !== teamBGoals) {
 
             return "Team A Won";
@@ -13,13 +13,13 @@ function matchWinner(teamAGoals, teamBGoals) {
         }
     }
     else {
-        console.log("invalid");
+        
+        return "Invalid";
 
     }
-
-
 }
-console.log(matchWinner(2, 1));
-console.log(matchWinner(3, 5));
-console.log(matchWinner(3, 3));
-console.log(matchWinner("3", 3));
+// console.log(matchWinner(2, 1));
+// console.log(matchWinner(3, 5));
+// console.log(matchWinner(3, 3));
+// console.log(matchWinner("3", 3));
+
