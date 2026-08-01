@@ -1,18 +1,18 @@
+  
 function isElevatorSafe(weights) {
- 
-
+    
     if (Array.isArray(weights)) { 
         
-        // console.log("valid");
+        
 
         let sum = 0;
         for (let i = 0; i<= weights.length - 1; i++) {
             sum += weights[i];
         }
         if(sum <= 400){
-            return "true";
+            return true;
         } else if (sum > 400){
-            return "false";
+            return false;
         }
       
 
@@ -23,7 +23,6 @@ function isElevatorSafe(weights) {
     else{
         return "Invalid";
     }
-    
 }
 console.log(isElevatorSafe("566677789o90"));
 console.log(isElevatorSafe([400]));
